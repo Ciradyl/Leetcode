@@ -9,8 +9,8 @@ class Solution {
             long temp = longDivisor;
             long multiple = 1;
             while (longDividend >= (temp << 1)) {
-                temp <<= 1;
-                multiple <<= 1;
+                temp += temp;
+                multiple += multiple;
             }
             longDividend -= temp;
             quotient += multiple;
