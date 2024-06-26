@@ -2,12 +2,9 @@
  * @param {...(null|boolean|number|string|Array|Object)} args
  * @return {number}
  */
-var argumentsLength = function(...args) {
-        let count = 0;
-    for (i = 0; i < args.length; i++) {
-        count += 1;
-    }
-    return count;
+var argumentsLength = function (...args) {
+    let argumentsLength = args.length
+    return argumentsLength;
 };
 
 /**
