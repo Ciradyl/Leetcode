@@ -3,9 +3,6 @@
  * @return {Function}
  */
 var compose = function (functions) {
-    if (functions.length === 0) {
-        return x => x;
-    }
     return function (x) {
         let output = x;
         for (let i = functions.length - 1; i >= 0; i--) {
